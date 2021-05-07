@@ -1,0 +1,6 @@
+[submodule "LP_WEB_2020-2021/cycle_one"]
+	path = LP_WEB_2020-2021/cycle_one
+	url = https://gitlab.com/urienmi/cycle_one.git
+[submodule "LP_WEB_2020-2021/pokemon-lp"]
+	path = LP_WEB_2020-2021/pokemon-lp
+	url = https://gitlab.com/Hoooki/pokemon-lp.git
