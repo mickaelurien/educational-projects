@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("fonts/Lexend_Deca/LexendDeca-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url("fonts/Big_Shoulders_Display/BigShouldersDisplay-Bold.ttf") format("truetype");
+}
+html {
+    position: relative;
+}
+body {
+    font-family: "Lexend Deca";
+    background-color: hsl(0, 0%, 95%);
+    margin: auto;
+    width: 50%;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20em;
+    transform: translateY(-40%);
+}
+p {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+h1 {
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+}
+
+.card {
+    padding: 3em;
+    width: fit-content;
+}
+
+.card > img {
+    width: 60px;
+    height: auto;
+}
+.card > p {
+    width: 14em;
+    line-height: 30px;
+}
+.card-orange {
+    background-color: hsl(31, 77%, 52%);
+}
+.card-blue {
+    background-color: hsl(184, 100%, 22%);
+}
+.card-green {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.btn {
+    font-family: "Lexend Deca";
+    width: fit-content;
+    font-size: 15px;
+    border-radius: 100px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.6em 2em;
+    border: 3px solid hsl(0, 0%, 95%);
+    margin: 6em 0 1em;
+    transition: 0.1s ease-in-out;
+}
+
+.btn-orange {
+    color: hsl(31, 77%, 52%);
+}
+.btn-blue {
+    color: hsl(184, 100%, 22%);
+}
+.btn-green {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+}
+.btn:focus {
+    outline-offset: none;
+    outline: none;
+}
+
+
+.card-radius-first {
+    border-radius: 10px 0 0 10px;
+}
+.card-radius-last {
+    border-radius: 0 10px 10px 0;
+}
+
+
+@media screen and (max-width: 969px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(0);
+        margin: 8vh 0;
+    }
+    .card-radius-first {
+        border-radius: 10px 10px 0 0;
+    }
+    .card-radius-last {
+        border-radius: 0 0 10px 10px;
+    }
+    .card > p {
+        width: 15em;
+        line-height: 30px;
+    }
+    .btn {
+        margin: 1em 0 0.5em;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
